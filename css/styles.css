@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+}
+
+a {
+    color: black;
+}
+
+body {
+    min-width: 360px;
+    background: url(../images/library-book-bookshelf-read\ 2.png) fixed;
+}
+
+main {
+    height: 100vh;
+    min-height: 500px;
+    display: flex;
+    padding: 60px 30px;
+}
+
+.glass {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(79, 88, 79);
+    opacity: .70;
+    z-index: -1;
+}
+
+.intro {
+    width: 100%;
+    color: white;
+}
+
+.intro h2 {
+    margin: 70px 0 10px;
+}
+
+form {
+    height: 100%;
+    padding: 70px 20px 30px;
+    background-color: rgb(200, 190, 190);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form.center {
+    margin: auto auto;
+    height: max-content;
+    gap: 50px;
+    padding: 20px;
+}
+
+form h3 {
+    font-size: xx-large;
+}
+
+form .fields {
+    display: flex;
+    flex-direction: column;
+}
+
+form .status {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 30.8px;
+    align-items: center;
+    font-size: 14px;
+}
+
+form .status label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+    line-height: 1.43px;
+}
+
+form .status label input {
+    position: relative;
+    bottom: 1px;
+}
+
+form .actions {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 3px;
+}
+
+button {
+    background-color: #CB2D6F;
+    padding: 6px 14px;
+    border-radius: 5px;
+    color: white;
+}
+
+button.success {
+    background-color: #14A098;
+}
+
+input:not(input[type="checkbox"]) {
+    border-bottom: 1.5px solid black;
+    width: 260px;
+    padding: 7px 0;
+}
+
+@media screen and (max-width:660px) {
+    main {
+        flex-direction: column;
+        max-width: 630px;
+        margin: 0 auto;
+        gap: 30px;
+    }
+}
